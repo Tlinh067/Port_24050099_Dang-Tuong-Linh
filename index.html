@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio_24050099_Đặng Tường Linh</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button id="mode-toggle" class="mode-btn">☀️ Light</button>
+    <!-- Navbar -->
+    <header class="site-header">
+      <nav class="navbar" aria-label="Điều hướng chính">
+        <a class="brand" href="#top" aria-label="Trang chủ">
+          <span class="logo">Portfolio</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="sr-only">Mở menu</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <ul id="primary-nav" class="nav-links">
+          <li><a href="#about">Thông tin</a></li>
+          <li><a href="#career">Nghề nghiệp</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner-section" id="top">
+      <div class="banner-text" data-reveal>
+        <p class="intro">Hé lô, mình là</p>
+        <h1>Đặng Tường Linh</h1>
+        <p class="role">Sinh viên ngành CNTT Đại học Bình Dương</p>
+        <p class="role">CTV Trung tâm STEAM AI - AIDTI</p>
+        <div class="banner-actions">
+          <a href="#projects" class="btn primary">Xem dự án</a>
+          <a href="#contact" class="btn ghost">Liên hệ ngay</a>
+        </div>
+      </div>
+      <div class="banner-image">
+        <div class="img-slider">
+          <img src="vuong.jpg" alt="Ảnh 1" />          
+          <img src="tsv2.jpg" alt="Ảnh 2" />          
+          <img src="tsv1.jpg" alt="Ảnh 3" />         
+          <img src="tsv4.jpg" alt="Ảnh 4" />        
+          <img src="tsv5.jpg" alt="Ảnh 5" />
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- Thông tin cá nhân -->
+      <section id="about" class="card" data-reveal>
+        <div class="section-header">
+          <h2>Đôi chút về TLinh</h2>
+          <a
+            href="Đặng Tường Linh.pdf"
+            download
+            class="btn outline"
+            target="_blank"
+          >
+            Tải CV
+          </a>
+        </div>
+        <div class="about-grid">
+          <img src="1.png" alt="Ảnh cá nhân" class="profile-pic" />
+          <dl class="about-details">
+            <p>Mình tên là Đặng Tường Linh, cứ gọi mình là TLinh nhó >_<</p>
+            <p>
+              TLinh đến từ Lâm Đồng và hiện đang sinh sống, học tập tại TP. Hồ
+              Chí Minh
+            </p>
+            <p>
+              Là một cô nàng năng nổ trong các hoạt động của trường, đồng thời
+              TLinh cũng là một học trò ngoan trong mắt thầy cô đó:3
+            </p>
+            <p>
+              Bên dưới là MXH của mình, truy cập nếu bạn muốn hiểu TLinh hơn
+              nha:333
+            </p>
+          </dl>
+          <div class="home-ct">
+            <a
+              href="https://www.facebook.com/share/1BUa8TVKrw/"
+              style="--i: 7"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://github.com/Tlinh067" style="--i: 8" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/dxl_tlinhh?igsh=emRwcXlicTh4dzZx"
+              style="--i: 9"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@dengxiangling0607"
+              style="--i: 10"
+              target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Thông tin nghề nghiệp -->
+      <section id="career" class="card career-section" data-reveal>
+        <div class="career-text">
+          <h2>Thông tin nghề nghiệp</h2>
+          <p>
+            Tlinh là sinh viên K27 ngành CNTT Trường Đại học Bình Dương. Đồng
+            thời để nâng cao kĩ năng, mình cũng tham gia ứng tuyển và hiện là
+            CTV, trợ giảng cho Trung tâm STEAM AI của Viện AIDTI
+          </p>
+        </div>
+
+        <div class="career-images">
+          <img src="sv.jpg" alt="Thiết kế 1" />
+          <img src="sv2.jpg" alt="Thiết kế 2" />
+          <img src="sv3.jpg" alt="Thiết kế 3" />
+          <img src="sv4.jpg" alt="Thiết kế 4" />
+        </div>
+      </section>
+
+      <!-- Sở thích -->
+      <section id="hobby" class="card" data-reveal>
+        <section class="hobbies" id="hobbies">
+          <h1 class="sub-title"><span>Sở thích</span></h1>
+          <div class="hobbies-wrapper">
+            <!-- Music Card -->
+            <div class="hobbies-container1">
+              <div class="hobby-card">
+              
+              <h2>Nghe nhạc</h2>
+              <p>
+                Tlinh thích nhất là vừa làm bài tập vừa chill với từng điệu
+                nhạc. Vì mình có học tiếng Trung nữa nên toàn nghe nhạc Trung
+                hong à. Loại nhạc mình thích chủ yếu là mấy bài nghe rất bay
+                bổng, xa xăm. Một số bài Tlinh hay nghe nè:
+              </p>
+              <img class="hobby-img" src="gif.gif" alt="Listen to music" />
+              <button class="toggle-btn">Chi tiết</button>
+              <div class="extra-content">
+                <p><strong>List nhạc tui iu:</strong></p>
+                <ul style="list-style-type: none" class="music-list">
+                  <li>
+                    <a
+                      href="https://youtu.be/Yfp5TMUF0HE?si=iOC5U1R1H8w5ALsv"
+                      target="_blank"
+                      >🎵 Glow 芽
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://youtu.be/_YPLockpCYU?si=Us7Bi4lx-i9jZLN2"
+                      target="_blank"
+                      >🎵 Timelapse 驰</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://youtu.be/tOGYEcrA4gA?si=IoJQMN0kisHud7Xx"
+                      target="_blank"
+                      >🎵 Breaking 破
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://youtu.be/OCKAJkurWrI?si=HshdVkpdokNw7F_z"
+                      target="_blank"
+                      >🎵 海平面的星
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://youtu.be/CAoCW6Wbs8A?si=aOhn432EiPv0NFR2"
+                      target="_blank"
+                      >🎵 Falling You
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://youtu.be/Lc1DED7GVqw?si=-hkMRVjcpfRGWqZo"
+                      target="_blank"
+                      >🎵 灰色的雨
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            <!-- Read Card -->
+             <div class="hobbies-container2">
+            <div class="hobby-card">
+              
+              <h2>Đọc sách</h2>
+              <p>
+                Nhìn vậy chứ TLinh cũng là con mọt sách đó nha. Mình đọc đa dạng
+                thể loại. Ví dụ mấy cuốn nổi tiếng như "Chuông nguyện hồn ai"
+                nè, "Tiếng chim hót trong bụi mận gai" nè, còn có "Hoàng tử bé"
+                nữa, nhiều lắm luôn!
+              </p>
+              <img
+                class="hobby-img"
+                src="read.gif"/>
+              <button class="toggle-btn">Chi tiết</button>
+              <div class="extra-content">
+                <p><strong>Sách Tlinh đã đọc:</strong></p>
+                <ul style="list-style-type: none" >
+                  <li class="sach">Chuông nguyện hồn ai</li>
+                <a
+                  href="https://trinhdinhlinh.com/sach/chuong-nguyen-hon-ai"
+                  target="_blank"
+                  >
+                  
+                  <img class="hobby-img" src="sach1.png" alt="1"
+                /></a>
+                <a
+                  href="https://nhasachmienphi.com/tieng-chim-hot-trong-bui-man-gai.html"
+                  target="_blank"
+                  >
+                  <li class="sach">Tiếng chim hót trong bụi mận gai</li>
+                  <img class="hobby-img" src="sach2.png" alt="2"
+                /></a>
+                <a
+                  href="https://nhasachmienphi.com/hoang-tu-be.html"
+                  target="_blank"
+                  >
+                  <li class="sach">Hoàng tử bé</li>
+                  <img class="hobby-img" src="sach3.png" alt="3"
+                /></a>
+                </ul>
+              </div>
+            </div>
+            </div>
+            <!-- Game Card -->
+             <div class="hobbies-container3">
+            <div class="hobby-card">
+              
+              <h2>Chơi game</h2>
+              <p>
+                Ngoài nghe nhạc, đọc sách thì Tlinh còn chơi game nữa >-<. Mình
+                chơi game để giải trí và game cũng là một môi trường tốt để kết
+                bạn nè, mình đã quen biết và chơi thân với rất nhiều người qua
+                game đó! Thật hong đùa đâu:3
+              </p>
+              <img class="hobby-img" src="game.gif" alt="play game" />
+              <button class="toggle-btn">Chi tiết</button>
+              <div class="extra-content">
+                <p><strong>Game tui chơi:</strong></p>
+                <ul style="list-style-type: none">
+                  <li>Genshin Impact</li>
+                  <img class="hobby-img" src="game1.png" alt="1" />
+                  <li>Liên Quân Mobile</li>
+                  <img class="hobby-img" src="game2.png" alt="2" />
+                  <li>Honkai Star Rail</li>
+                  <img class="hobby-img" src="game3.png" alt="3" />
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Kỹ năng & Ngôn ngữ -->
+      <section class="skills-box">
+        <h2 class="skills-title">Kỹ năng</h2>
+
+        <div class="skills-inner">
+          <!-- Cột trái: technical -->
+          <div class="skills-column technical">
+            <!-- HTML -->
+            <div class="skill-row">
+              <img
+                class="skill-icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML"
+              />
+              <div class="skill-meta">
+                <div class="skill-name">HTML</div>
+                <div class="progress">
+                  <div class="fill" data-percent="70"></div>
+                  <div class="cap"></div>
+                </div>
+              </div>
+              <div class="skill-percent">70%</div>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-row">
+              <img
+                class="skill-icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS"
+              />
+              <div class="skill-meta">
+                <div class="skill-name">CSS</div>
+                <div class="progress">
+                  <div class="fill" data-percent="70"></div>
+                  <div class="cap"></div>
+                </div>
+              </div>
+              <div class="skill-percent">70%</div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-row">
+              <img
+                class="skill-icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+              />
+              <div class="skill-meta">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress">
+                  <div class="fill" data-percent="65"></div>
+                  <div class="cap"></div>
+                </div>
+              </div>
+              <div class="skill-percent">65%</div>
+            </div>
+
+            <!-- C++ -->
+            <div class="skill-row">
+              <img
+                class="skill-icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                alt="C++"
+              />
+              <div class="skill-meta">
+                <div class="skill-name">C++</div>
+                <div class="progress">
+                  <div class="fill" data-percent="80"></div>
+                  <div class="cap"></div>
+                </div>
+              </div>
+              <div class="skill-percent">80%</div>
+            </div>
+          </div>
+
+          <!-- Cột phải: language -->
+          <div class="skills-column languages">
+            <!-- English -->
+            <div class="skill-row">
+              <img
+                class="skill-icon"
+                src="https://cdn-icons-png.flaticon.com/512/330/330425.png"
+                alt="English"
+              />
+              <div class="skill-meta">
+                <div class="skill-name">English</div>
+                <div class="progress">
+                  <div class="fill" data-percent="75"></div>
+                  <div class="cap"></div>
+                </div>
+              </div>
+              <div class="skill-percent">75%</div>
+            </div>
+
+            <!-- Chinese -->
+            <div class="skill-row">
+              <img
+                class="skill-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+                alt="Chinese"
+              />
+              <div class="skill-meta">
+                <div class="skill-name">Chinese</div>
+                <div class="progress">
+                  <div class="fill" data-percent="85"></div>
+                  <div class="cap"></div>
+                </div>
+              </div>
+              <div class="skill-percent">85%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="index.js"></script>
+
+      <!-- Chứng chỉ - Giải thưởng -->
+      <section id="certificates" class="card certificates-section" data-reveal>
+        <h2>Chứng chỉ & Giải thưởng</h2>
+
+        <ul class="list1">
+          <li>
+            <a href="Coursera GZHPRCV9P2IJ.pdf" target="_blank"
+              >Chứng chỉ IT Support Google Coursera - 2024
+            </a>
+          </li>
+          <li>
+            <a href="Eureka.png" target="_blank"
+              >Bán kết Cuộc thi Ý tưởng Sáng tạo trẻ Eureka 2025</a
+            >
+          </li>
+          <li>
+            <a
+              href="Xuất sắc trong công tác Đoàn và phong trào thanh niên.png"
+              target="_blank"
+              >Xuất sắc trong công tác Đoàn và phong trào thanh niên</a
+            >
+          </li>
+          <li>
+            <a href="Toàn diện trong rèn luyện và học tập.png" target="_blank"
+              >Toàn diện trong rèn luyện và học tập năm học 2024 - 2025</a
+            >
+          </li>
+        </ul>
+        <div class="achievement-image">
+          <div class="image-slider">
+            <img src="giai1.jpg" />
+            <img src="Toàn diện trong rèn luyện và học tập.png" />
+            <img src="giai2.jpg" />
+            <img
+              src="Xuất sắc trong công tác Đoàn và phong trào thanh niên.png"
+            />
+            <img src="Eureka.png" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Dự án -->
+      <section id="projects" class="card" data-reveal>
+        <h2>Dự án</h2>
+        <div class="projects-grid">
+          <div class="project-item">
+            <h3>Portfolio</h3>
+            <p>
+              Thiết kế và xây dựng website CV cá nhân theo phong cách tối giản,
+              tập trung hiển thị thông tin nhanh và rõ ràng.
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>Trang web bán sách (Đang tiến hành)</h3>
+            <p>
+              Tạo trang giới thiệu, bán sách với giao diện responsive và hiện
+              đại.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Liên hệ -->
+      <section id="contact" class="card" data-reveal>
+        <h2>Liên hệ với TLinh</h2>
+        <ul class="contact-list">
+          <li>
+            <span>SĐT</span>
+            <a href="tel:0705066883">0705066883</a>
+          </li>
+          <li>
+            <span>Email</span>
+            <a href="mailto:dtlinhhh0607@gmail.com">dtlinhhh0607@gmail.com</a>
+          </li>
+          <li>
+            <span>Github</span>
+            <a href="https://github.com/Tlinh067" target="_blank">TLinh067</a>
+          </li>
+          <li>
+            <span>Facebook</span>
+            <a href="https://www.facebook.com/share/1BUa8TVKrw/" target="_blank"
+              >Tường Linh</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer>
+      <p>© 2025 Đặng Tường Linh_Portfolio</p>
+      <div class="social-icons">
+        <a href="https://www.threads.com/@dxl_tlinhh" target="_blank"
+          ><i class="fab fa-threads"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/linh-đặng-tường-23823b343"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://discord.gg/FxHqM4ab" target="_blank"
+          ><i class="fab fa-discord"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Backtotop -->
+    <button id="backToTop" title="Lên đầu trang">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  // Hiện nút khi cuộn xuống
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "flex";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  //  Khi click thì cuộn lên đầu trang
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+
+
+    <!-- Scroll-progress -->
+    <div id="scroll-progress"></div>
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector("#primary-nav");
+      const navAnchors = navLinks?.querySelectorAll("a");
+      const siteHeader = document.querySelector(".site-header");
+
+      navToggle?.addEventListener("click", () => {
+        const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", String(!isExpanded));
+        navLinks?.classList.toggle("open");
+      });
+
+      navAnchors?.forEach((anchor) =>
+        anchor.addEventListener("click", () => {
+          navLinks?.classList.remove("open");
+          navToggle?.setAttribute("aria-expanded", "false");
+        })
+      );
+
+      const handleHeaderState = () => {
+        if (!siteHeader) return;
+        if (window.scrollY > 10) {
+          siteHeader.classList.add("is-scrolled");
+        } else {
+          siteHeader.classList.remove("is-scrolled");
+        }
+      };
+
+      handleHeaderState();
+      window.addEventListener("scroll", handleHeaderState);
+
+      const revealElements = document.querySelectorAll("[data-reveal]");
+      const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.25,
+          rootMargin: "0px 0px -80px 0px",
+        }
+      );
+
+      revealElements.forEach((element) => revealObserver.observe(element));
+
+      //  Scroll Progress Bar 
+      const scrollProgress = document.getElementById("scroll-progress");
+
+      const updateScrollProgress = () => {
+        const scrollTop = window.scrollY; // vị trí cuộn hiện tại
+        const docHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        scrollProgress.style.width = `${scrollPercent}%`;
+      };
+
+      window.addEventListener("scroll", updateScrollProgress);
+      window.addEventListener("resize", updateScrollProgress);
+      updateScrollProgress();
+    </script>
+  </body>
+</html>
