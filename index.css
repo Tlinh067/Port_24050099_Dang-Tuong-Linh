@@ -1428,3 +1428,71 @@ body.dark-mode footer .social-icons a:hover {
     padding: 2rem 1rem;
   }
 }
+
+
+/* 
+   FIX LỖI HIỂN THỊ HOBBIES & CONTACT 
+
+
+/* 1. XỬ LÝ PHẦN SỞ THÍCH (HOBBIES) */
+@media (max-width: 1024px) {
+  /* Chuyển các khung sở thích từ ngang sang dọc */
+  .hobbies-wrapper {
+    display: flex;
+    flex-direction: column; /* Quan trọng: Xếp chồng lên nhau */
+    align-items: center;    /* Căn giữa màn hình */
+    width: 100%;
+    gap: 30px;
+  }
+
+  /* Chỉnh lại kích thước từng thẻ sở thích */
+  .hobby-card {
+    width: 100%;        /* Chiếm full chiều ngang container */
+    max-width: 450px;   /* Nhưng không quá to */
+    flex: none;         /* Bỏ co giãn tự động */
+    margin: 0 auto;     /* Căn giữa */
+    
+    /* Đảm bảo animation không làm ẩn nội dung trên mobile */
+    opacity: 1 !important; 
+    transform: translateY(0) !important;
+    animation: none !important; 
+  }
+  
+  /* Reset lại các container con nếu có */
+  .hobbies-container1, 
+  .hobbies-container2, 
+  .hobbies-container3 {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* 2. XỬ LÝ PHẦN LIÊN HỆ (CONTACT) & BÓP CHỮ */
+@media (max-width: 600px) {
+  /* Chuyển khung liên hệ sang dạng dọc */
+  .contact-list li {
+    flex-direction: column;  /* Tiêu đề ở trên, nội dung ở dưới */
+    align-items: flex-start; /* Căn lề trái */
+    gap: 0.5rem;             /* Khoảng cách giữa tiêu đề và nội dung */
+    padding: 1rem;
+    width: 100%;
+  }
+
+  /* Chỉnh lại tiêu đề (Email, Phone...) */
+  .contact-list span {
+    min-width: auto;     /* Bỏ chiều rộng cố định */
+    margin-bottom: 2px;
+    font-size: 1.1rem;
+  }
+
+  /* QUAN TRỌNG: Bẻ gãy dòng chữ dài (Email/Link) */
+  .contact-list li p,
+  .contact-list li a {
+    width: 100%;              /* Chiếm hết chiều ngang */
+    word-break: break-word;   /* Bẻ từ xuống dòng nếu quá dài */
+    overflow-wrap: anywhere;  /* Đảm bảo không bị tràn ra ngoài */
+    white-space: normal;      /* Cho phép xuống dòng tự nhiên */
+    font-size: 1rem !important; /* Chữ nhỏ lại xíu cho vừa mắt */
+    text-align: left;
+  }
+}
